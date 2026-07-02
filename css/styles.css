@@ -1,0 +1,216 @@
+/*======================================
+=            VARIABLES                 =
+======================================*/
+
+:root{
+
+    --sidebar-width:28%;
+
+    --primary:#2563eb;
+
+    --sidebar:#111827;
+
+    --background:#f8fafc;
+
+    --text:#1f2937;
+
+    --light:#ffffff;
+
+}
+
+/*======================================
+=              RESET                   =
+======================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--background);
+
+}
+
+/*======================================
+=             LAYOUT                   =
+======================================*/
+
+.layout{
+
+    display:flex;
+
+    height:100vh;
+
+}
+
+/*======================================
+=             SIDEBAR                  =
+======================================*/
+
+.sidebar{
+
+    width:var(--sidebar-width);
+
+    min-width: 280px;
+
+    max-width: 360px;
+
+    background:var(--sidebar);
+
+    color:white;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    bottom:0;
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+}
+
+.sidebar-content{
+
+    height:100%;
+
+    padding:50px 40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:60px;
+
+}
+
+/*======================================
+=               NAV                    =
+======================================*/
+
+nav ul{
+
+    list-style:none;
+
+}
+
+nav li{
+
+    margin-bottom:20px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#38bdf8;
+
+}
+
+/*======================================
+=             CONTENT                  =
+======================================*/
+
+.content{
+
+    margin-left:var(--sidebar-width);
+
+    width:calc(100% - var(--sidebar-width));
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow-y:auto;
+
+
+}
+
+/*======================================
+=             HERO                     =
+======================================*/
+
+#hero{
+
+    flex:1;
+
+    padding:60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+/*======================================
+=             FOOTER                   =
+======================================*/
+
+footer{
+
+    background:#e5e7eb;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+nav ul li a{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:white;
+    text-decoration:none;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    transition:.3s;
+}
+
+nav ul li a:hover{
+
+    background:#1e293b;
+
+    color:#38bdf8;
+
+}
